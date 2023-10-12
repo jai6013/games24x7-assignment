@@ -1,0 +1,13 @@
+@import '../../sass/variable';
+
+.modal {
+  border: none;
+  height: 33%;
+  width: 36%;
+  border-radius: $radius5px;
+  padding: 10px;
+}
+
+::backdrop {
+  background-color: $colorGrey;
+}

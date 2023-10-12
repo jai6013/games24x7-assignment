@@ -1,0 +1,41 @@
+@import '../../sass/_variable';
+
+a:hover,
+a:focus {
+    color: $btnPrimaryHover;
+    text-decoration: none;
+}
+
+button:focus,
+a:focus {
+    border: 1px solid $colorPrimary;
+}
+
+button:focus,
+a:focus {
+    border: 1px solid $colorPrimary;
+}
+
+.btnPrimary {
+    background: $btnPrimaryColor;
+    border-radius: $radius5px;
+    border: 0;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: $colorWhite;
+    height: 44px;
+    padding: 0.55rem;
+    line-height: 2rem;
+    font-size: 14px;
+    width: 100%;
+}
+
+.btn {
+    &:hover {
+        background: $btnPrimaryHover;
+    }
+}
+
+.disabled{
+    background-color: $colorGrey;
+}

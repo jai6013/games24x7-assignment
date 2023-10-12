@@ -1,0 +1,66 @@
+@import '../../sass/mixins';
+
+.topContainer{
+    @include d-flex;
+    align-items: flex-start;
+    gap: 2px;
+}
+
+.modalContainer{
+  padding: 10px;
+}
+
+.headingContainer {
+    @include d-flex;
+    justify-content: flex-start;
+    gap: 10px;
+    padding-bottom: 15px;
+}
+
+.iconClassName{
+    width: 23px;
+    height: 30px;
+}
+
+.modalBody{
+    @include d-flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.inputAndBtnContainer{
+    @include d-flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.closeIcon{
+    width: 14px;
+    height: 14px;
+}
+
+.panCardImageClassName{
+    width: 211px;
+    height: 128px;
+}
+
+@media screen and (max-width: 1280px) {
+    .modalBody{
+        flex-direction: column;
+        overflow-y: scroll !important;
+    }
+
+    .panCardImageClassName{
+        width: 159px;
+        height: 98px;
+    }
+
+    .inputAndBtnContainer, .inputWithTextCount{
+        width: 100%;
+    }
+
+    .inputWithTextCount > input{
+        width: 100% !important;
+    }
+
+}
